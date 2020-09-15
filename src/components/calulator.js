@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux';
 
 function Calculator(props) {
 
@@ -88,4 +89,6 @@ function Calculator(props) {
 
 }
 
-export default Calculator;
+export default connect(
+    state => { return { Calculator: state}}
+) (Calculator);
