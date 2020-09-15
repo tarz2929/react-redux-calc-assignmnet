@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux';
+import { addNewCalculator } from '../actions/calculator';
 
 function Calculator(props) {
 
@@ -9,6 +10,8 @@ function Calculator(props) {
     const [result, setResult] = useState('');
     const submit = e=> { 
         e.preventDefault();
+
+        props.dispatch(addNewCalculator( setResult));
 
         switch(operator)
         {

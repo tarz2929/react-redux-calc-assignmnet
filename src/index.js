@@ -8,7 +8,8 @@ import { addNewCalculator } from './actions/calculator';
 import { Provider } from 'react-redux';
 import Calculator from './components/calulator';
 
-const store = createStore(calculatorReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(calculatorReducer, 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 store.subscribe( () => console.log( store.getState() ) );
 
