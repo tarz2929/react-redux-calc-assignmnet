@@ -5,6 +5,7 @@ import './index.css';
 import { createStore } from 'redux';
 import calculatorReducer from './reducers/calculator';
 import { addNewCalculator } from './actions/calculator';
+import { Provider } from 'react-redux';
 
 const store = createStore(calculatorReducer);
 
