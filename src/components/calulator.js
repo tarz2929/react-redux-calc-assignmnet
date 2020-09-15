@@ -75,6 +75,7 @@ function Calculator(props) {
                 <label htmlFor="inputB">inputB:</label> 
                 <input id="inputB" type="number" value={inputB} onChange={e => setInputB(e.target.value)} ></input>
                 <input type="submit"/>
+                <input type="submit" value="Add to Results" />
             </form>
 
             <p>

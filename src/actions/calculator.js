@@ -1,4 +1,4 @@
-const { default: Calculator } = require("../components/calulator");
+// const { default: Calculator } = require("../components/calulator");
 
 
 const addNewCalculator = calculatorContent => {
